@@ -41,15 +41,15 @@ class transaction;
   function void display(string tag);
 
     $display("[%s] ID=%0d OP=%0b AW=%0d AR=%0d WDATA=%0d RDATA=%0d BRESP=%0b RRESP=%0b",
-          tag,
-          txn_id,
-          op,
-          awaddr,
-          araddr,
-          wdata,
-          rdata,
-          bresp,
-          rresp);
+          tag, //Input string to be displayed
+          txn_id, //ID 
+          op, //operation
+          awaddr, //write address
+          araddr, //read address
+          wdata, // write data
+          rdata, //read data
+          bresp, //write response
+             rresp); //read response
 
 endfunction
 
